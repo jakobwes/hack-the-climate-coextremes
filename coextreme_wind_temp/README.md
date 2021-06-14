@@ -7,7 +7,7 @@ We study the event: 'occurrence of high wind conditional to extreme low temperat
 
 ## Metric
 The measure of co-dependence Chi is defined in (Dependence Measures for Extreme Value Analyses-Coles et al.,2000).
-Chi represents the conditional probability of simultaneous extremes.
+Chi represents the conditional probability of simultaneous extremes. It is calculated in `coextreme_wind_temp/extremeWT_calculation.ipynb`
 
 
 ## Results
