@@ -44,9 +44,15 @@ On UCL JupyterHub:
 For our packages there is a `hack.yml` from which a conda-environment can be created. Additionally for the  `windfarm_coextremes.ipynb` and for the  `heatwave_buddies.ipynb` you will need to install `gradio` from pip: `pip3 install gradio`.
 
 ## Additional Files - Calculations
-- `visualise.py`: returns 3 plots (1 for every decade) showing the Chi values on the co-occurence of heatwaves conditional to extreme for a given base point. Usage demonstrated in `visualise_test.ipynb`
-- `VISUALISAION.ipynb`: interactive generation of plots (as above) based on the chosen decade and UK postcode
+- `coextreme_heatwaves/compute_and_eval_chi_values/compute_chi_values_for_all_spatial_combinations.ipynb`: computes the Chi-values of all UK-locations with all other UK-locations for three time-intervals.
+- `coextreme_heatwaves/compute_and_eval_chi_values/compute_connected_sets_of_high_chi.ipynb`: uses the computation in above file to calculate the "size" of a heatwave.
+- `coextreme_wind_temp/extremeWT_calculation.ipynb`: calculate the Chi-values for the coextreme of high wind and low temperature and create maps.
+
+## Additional Files - Visualization
+- `coextreme_heatwaves/visualise.py`: returns 3 plots (1 for every decade) showing the Chi values on the co-occurence of heatwaves conditional to extreme for a given base point. Usage demonstrated in `coextreme_heatwaves/VISUALISATION.ipynb`.
+- `coextreme_heatwaves/VISUALISATION.ipynb`: interactive generation of plots (as above) based on the chosen decade and UK postcode.
 
 ## Additional Files - Data
-- ```chi_vals[...].txt``` : Chi values on the co-occurence of heatwaves conditional to extreme for all UK base points, for a given decade
-- ```derotated_coordinates.csv```: aggregated data on grid point coordinates + postcodes
+- ```coextreme_heatwaves/chi_vals[...].txt``` : Chi values on the co-occurence of heatwaves conditional to extreme for all UK base points, for a given decade.
+- ```coextreme_heatwaves/derotated_coordinates.csv```: aggregated data on grid point coordinates + postcodes.
+- ```coextreme_wind_temp/results/[...]```: maps of Chi-values for the co-occurence of high wind and low temperature.
